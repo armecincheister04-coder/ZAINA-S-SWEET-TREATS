@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Zaina's Sweet Treats in Sitio,Pili,Granada,Boljoon,Cebu'</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: url("hg.jpg") no-repeat center center/cover;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .container {
+        text-align: center;
+        padding: 40px;
+        background: rgba(255,255,255,0.85);
+        margin: 40px auto;
+        width: 80%;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.3);
+        backdrop-filter: blur(5px);
+        animation: slideUp 0.8s ease;
+    }
+
+    @keyframes slideUp {
+        from { transform: translateY(40px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    .title {
+        font-size: 55px;
+        font-weight: 800;
+        color: green;
+        text-shadow: 2px 2px 4px #000;
+        margin-bottom: 10px;
+    }
+
+    .nav a {
+        font-size: 22px;
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .nav a:hover {
+        color: green;
+        text-shadow: 1px 1px 5px green;
+    }
+
+    .product-section {
+        margin-top: 50px;
+    }
+
+    .promo-title {
+        font-size: 45px;
+        color: orange;
+        font-weight: 800;
+        text-shadow: 3px 3px 10px #000;
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+        0% { text-shadow: 0 0 5px orange; }
+        100% { text-shadow: 0 0 20px orange; }
+    }
+
+    .product-name {
+        font-size: 35px;
+        font-weight: 800;
+        color: red;
+        margin-top: 10px;
+    }
+
+    .product-img {
+        height: 280px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        transition: 0.4s;
+    }
+
+    .product-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px rgba(255,165,0,0.7);
+    }
+
+    /* CLICK DESCRIPTION */
+    .desc-box {
+        width: 70%;
+        margin: 30px auto;
+        padding: 20px;
+        background: rgba(255,255,255,0.9);
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 22px;
+        color: green;
+        transition: 0.3s ease;
+    }
+
+    .desc-box:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    }
+
+    .desc-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s ease;
+        font-size: 18px;
+        color: #333;
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+
+    .desc-content.open {
+        max-height: 500px;
+    }
+
+    /* HOVER DESCRIPTION BOX */
+    .hover-box {
+        width: 70%;
+        margin: 25px auto;
+        padding: 20px;
+        background: rgba(255,255,255,0.9);
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        font-size: 20px;
+        font-weight: 600;
+        color: #444;
+        transition: 0.3s;
+    }
+
+    .hover-box:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 30px rgba(255,200,0,0.6);
+    }
+
+    .hover-details {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.6s ease;
+        font-size: 17px;
+        color: #333;
+        margin-top: 10px;
+    }
+
+    .hover-box:hover .hover-details {
+        opacity: 1;
+        max-height: 500px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">WELCOME TO ZAINA'S SWEET TREATS</div>
+
+    <div class="nav">
+        <a href="landingpage.html">HOME</a> |
+        <a href="index.html">EVENT</a> |
+        <a href="Contact.html">CONTACT US</a> |
+        <a href="Product.html">PRODUCTS</a>
+    </div>
+
+    <!-- ========================= -->
+    <!--     MANGO FLOAT SECTION   -->
+    <!-- ========================= -->
+    <div class="product-section">
+
+        <div class="promo-title">BEST SELLER!</div>
+
+        <div class="product-name">MANGO FLOAT (Super Special)</div>
+
+        <img src="sui2.jpg" class="product-img" alt="Mango Float">
+
+        <div class="desc-box" onclick="toggleDesc()">
+            CLICK TO SEE BENEFITS 🍃
+
+            <div id="descContent" class="desc-content">
+                <br>
+                <b>1. Rich in Vitamin C</b><br>
+                - Strengthens immune system<br><br>
+
+                <b>2. Contains Vitamin A</b><br>
+                - Supports good eyesight<br><br>
+
+                <b>3. Has Dietary Fiber</b><br>
+                - Helps digestion<br>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!--     PUTO CHEESE SECTION  -->
+    <!-- ========================= -->
+    <div class="product-section">
+
+        <div class="promo-title">NEW PRODUCT!</div>
+
+        <div class="product-name" style="color: purple;">PUTO CHEESE (Soft & Fluffy)</div>
+
+        <img src="sui1.jpg" class="product-img" alt="Puto Cheese">
+
+        <div class="hover-box">
+            HOVER TO SEE NUTRITIONAL VALUE 💛
+
+            <div class="hover-details">
+                <br>
+                <b>• High in Protein</b><br>
+                - Helps muscle growth<br><br>
+
+                <b>• Rich in Carbohydrates</b><br>
+                - Gives long-lasting energy<br><br>
+
+                <b>• Contains Calcium</b><br>
+                - Strengthens bones & teeth<br><br>
+
+                <b>• Low Fat</b><br>
+                - Lighter than most desserts<br>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!--   CHOCOLATE CAKE POPS    -->
+    <!-- ========================= -->
+    <div class="product-section">
+
+        <div class="promo-title" style="color:#8B4513;">SPECIAL TREATS!</div>
+
+        <div class="product-name" style="color:#6b2e19;">CHOCOLATE CAKE POPS</div>
+
+        <img src="sui3.jpg" class="product-img" alt="Chocolate Cake Pops">
+
+        <div class="hover-box">
+            HOVER TO SEE BENEFITS 🍫
+
+            <div class="hover-details">
+                <br>
+                <b>• Contains Antioxidants (from cocoa)</b><br>
+                - Helps protect the body from damage<br><br>
+
+                <b>• Boosts Energy</b><br>
+                - Quick source of carbohydrates<br><br>
+
+                <b>• Improves Mood</b><br>
+                - Chocolate increases serotonin levels<br><br>
+
+                <b>• Good Source of Iron</b><br>
+                - Helps maintain healthy blood<br>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!--      MAJA BLANCA         -->
+    <!-- ========================= -->
+    <div class="product-section">
+
+        <div class="promo-title" style="color:#d4b200;">FRESH & CREAMY!</div>
+
+        <div class="product-name" style="color:#b8860b;">MAJA BLANCA</div>
+
+        <img src="sui4.jpg" class="product-img" alt="Maja Blanca">
+
+        <div class="hover-box">
+            HOVER TO SEE BENEFITS 🥥
+
+            <div class="hover-details">
+                <br>
+                <b>• Rich in Healthy Fats (from coconut milk)</b><br>
+                - Provides energy and supports brain function<br><br>
+
+                <b>• Contains Potassium</b><br>
+                - Helps maintain hydration & muscle function<br><br>
+
+                <b>• Good Source of Fiber</b><br>
+                - Supports digestion and bowel health<br><br>
+
+                <b>• Has Vitamins E & B</b><br>
+                - Supports skin health and metabolism<br>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function toggleDesc() {
+    let content = document.getElementById("descContent");
+    content.classList.toggle("open");
+}
+</script>
+
+</body>
+</html>
